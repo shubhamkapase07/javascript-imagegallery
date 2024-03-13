@@ -1,11 +1,11 @@
 let scrollContainer = document.querySelector(".gallery");
 let backBtn = document.getElementById("backBtn");
-let nextBtn = document.getElementById(".nextBtn");
+let nextBtn = document.getElementById("nextBtn");
 
 scrollContainer.addEventListener("wheel", (evt)=>{
     evt.preventDefault();
     scrollContainer.scrollLeft += evt.deltaY;
-    scrollContainer.style.scrollBehaviour ="auto";
+    scrollContainer.style.scrollBehaviour ="smooth";
 });
 
 nextBtn.addEventListener("click", ()=>{
